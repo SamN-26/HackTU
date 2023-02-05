@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const path = require('path');
 
 const http = require("https");
 
@@ -7,6 +8,8 @@ const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
+// app.set('views', path.join(__dirname, 'views'));
+
 
 
 
