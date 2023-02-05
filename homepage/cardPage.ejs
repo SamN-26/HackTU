@@ -21,7 +21,10 @@
                 <div class="card">
                     <img src="..." class="card-img-top" alt="song img">
                     <div class="card-body">
-                      <h5 class="card-title">Song title</h5>
+                      <% titles.forEach(function(title) { %>
+                        <h5><%= title %></h5>
+                        <% }); %>
+                      <!-- <h5 class="card-title"> <%= titles %> </h5> -->
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <a href="#" class="btn btn-primary">Listen Now</a>
                     </div>
