@@ -38,7 +38,7 @@ const request = http.request(options, function (response) {
 	response.on("end", function () {
 		const body = Buffer.concat(chunks);
 		// console.log(body.hits[0].result.full_title.toString());
-        console.log(body.hits.[0]);
+        console.log(body.hits[0].type.toString());
 	});
 });
 
